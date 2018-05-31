@@ -1,0 +1,15 @@
+.g:nth-child(1) {
+  fill: #FF420E;
+}
+
+.g:nth-child(2) {
+  fill: #80BD9E;
+}
+
+.g:nth-child(3) {
+  fill: #F98866;
+}
+
+.g:nth-child(4) {
+  fill: #89DA59;
+}
