@@ -1,3 +1,11 @@
+html {
+  background-color: #000;
+}
+
+#lineDrawing {
+  background-color: #000;
+}
+
 .g:nth-child(1) {
   fill: #FF420E;
 }
