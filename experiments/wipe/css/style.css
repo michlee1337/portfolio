@@ -1,0 +1,17 @@
+.clipBox {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../KL.png");
+  clip: rect(0px 100vw 100vh 0px);
+}
+.clipbg {
+  position:relative;
+  margin-right:10px;
+  width:100vw;
+  height:100vh;
+  display:inline-block;
+  background-color: #333;
+  border:1px solid black;
+  cursor: pointer;
+}
