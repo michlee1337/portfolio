@@ -1,0 +1,37 @@
+@font-face {
+  font-family: FoxandCat;
+  src: url(FoxandCat.ttf);
+}
+
+html, 
+body{
+	background-color: #2f3133;
+}
+
+p,h1 {
+	font-family: FoxandCat, "Heltvetica Neue",serif;
+	color: #d0d5db;
+}
+
+#name {
+	margin: 10%;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.4em;
+	color: #e1e6ec;
+}
+
+.nav-link {
+	margin: 0 15%;
+}
+
+.nav-link:hover {
+	border-bottom: 1px solid #e1e6ec;
+}
