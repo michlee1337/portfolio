@@ -35,3 +35,12 @@ a:hover {
 .nav-link:hover {
 	border-bottom: 1px solid #e1e6ec;
 }
+
+#navbar {
+	margin: 5% 0;
+}
+
+.card {
+	background-color: #1f2123;
+	margin: 5%
+}
