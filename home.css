@@ -1,7 +1,14 @@
 @font-face {
-  font-family: FoxandCat;
-  src: url(FoxandCat.ttf);
+  font-family: Lombok;
+  src: url(Lombok.otf);
 }
+
+@font-face {
+      font-family: secondaryFont;
+      src: local('Avenir');
+      font-weight: 400;
+}
+
 
 html, 
 body{
@@ -9,12 +16,13 @@ body{
 }
 
 p,h1 {
-	font-family: FoxandCat, "Heltvetica Neue",serif;
+	font-family: Lombok, secondaryFont, "Heltvetica Neue",serif;
 	color: #d0d5db;
 }
 
 #name {
 	margin: 10%;
+	text-align: center;
 }
 
 h1 {
