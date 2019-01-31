@@ -13,7 +13,7 @@
 
 p,h1 {
   font-family: Simplifica, secondaryFont, "Heltvetica Neue",serif;
-  color: #d0d5db;
+  color: #9AA4C2;
   font-size: 10vw;
 }
 
@@ -26,6 +26,10 @@ body{
 
 #name {
 	margin: 10% 0;
+}
+
+#name h1{
+	color: #DFDEFF;
 }
 
 /* Arrow */
