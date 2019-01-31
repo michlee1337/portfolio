@@ -27,3 +27,14 @@ body{
 #name {
 	margin: 10% 0;
 }
+
+/* Arrow */
+
+#arrow {
+	margin: 0 40%;
+}
+
+#arrow svg {
+	display: block;
+	margin: auto;
+}
