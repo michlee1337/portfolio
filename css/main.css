@@ -32,6 +32,14 @@ body{
 	color: #DFDEFF;
 }
 
+/* Bunny */
+
+#bunny {
+	display: block;
+	margin: auto;
+	width: 10%;
+}
+
 /* Arrow */
 
 #arrow {
