@@ -1,0 +1,23 @@
+/* FONT */
+
+@font-face {
+  font-family: Simplifica;
+  src: url(Simplifica.ttf);
+}
+
+@font-face {
+      font-family: secondaryFont;
+      src: local('Avenir');
+      font-weight: 400;
+}
+
+p,h1 {
+  font-family: Simplifica, secondaryFont, "Heltvetica Neue",serif;
+  color: #9AA4C2;
+  font-size: 10vw;
+}
+
+html, 
+body{
+  background-color: #5C872D;
+}

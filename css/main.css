@@ -40,16 +40,61 @@ body{
 	width: 10%;
 }
 
+/* hill */
+
+#hill {
+  margin-top: -63%;
+}
+
 /* Arrow */
 
 #arrow {
-	margin: 0 40%;
+  width: 10%;
+	color: #fff;
+  margin-left: 45%;
+  margin-top: -30%;
+
 }
 
 #arrow svg {
 	display: block;
 	margin: auto;
+	animation: float_shadow 6s ease-in-out infinite;
+	/*filter: drop-shadow( 0 2px 1px #1a001a ); */
 }
+
+#arrow svg g {
+	animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float_shadow {
+	0% {
+		filter: drop-shadow(0 5px 15px #1a001a);
+	}
+	50% {
+		filter: drop-shadow(0 25px 15px #000);
+	}
+	100% {
+		filter: drop-shadow(0 5px 15px #1a001a);
+	}
+}
+
+
+
+
+
 
 /* stars */
 /* ============================================================================================== 
