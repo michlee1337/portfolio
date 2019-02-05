@@ -14,10 +14,29 @@
 p,h1 {
   font-family: Simplifica, secondaryFont, "Heltvetica Neue",serif;
   color: #9AA4C2;
-  font-size: 10vw;
+}
+
+h1 {
+	font-size: 10vw;
 }
 
 html, 
 body{
-  background-color: #5C872D;
+  background-color: #282828;
+}
+
+/* NAV */
+.navbar-nav {
+flex-direction: row;
+}
+
+.nav-link {
+padding-right: .5rem !important;
+padding-left: .5rem !important;
+}
+
+/* Fixes dropdown menus placed on the right side */
+.ml-auto .dropdown-menu {
+left: auto !important;
+right: 0px;
 }
