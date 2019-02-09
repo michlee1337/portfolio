@@ -42,6 +42,12 @@ h2 {
   margin: 0 0 10% 0;
 }
 
+/* navbar*/
+.navbar {
+  width: 100%;
+  background-color: #3E3E3E
+}
+
 /* Projects */
 
 .card {
