@@ -1,0 +1,55 @@
+/* FONTS AND BACKGROUND */
+
+@font-face {
+  font-family: santral;
+  src: url(santral-light-webfont.woff);
+}
+
+html, .container-fluid {
+	background-color: #f1f2ec;
+}
+
+h1,h2,a {
+	color:#20201f;
+	font-family: santral,'Roboto', sans-serif;
+	font-weight: 900;
+	opacity: 0;
+}
+
+/* STORY */
+
+.story-line {
+	margin-top: 100vh;
+	margin-bottom: 100vh;
+	width: 100%;
+}
+
+.story-call{
+	margin-bottom: 20vh;
+}
+
+.btn-outline-dark {
+	color: #6c6c6c;
+	border-color: #6c6c6c;
+}
+
+.btn-outline-dark:hover {
+	background-color: #6c6c6c;
+	border-color: #6c6c6c;
+}
+
+#line-1{
+	margin-top: 50vh;
+}
+
+/* ICONS */
+#hand{
+	top: 100%;
+	right: 0;
+	width: 70px;
+}
+
+/* GSAP */
+#cta {
+	opacity: 1;
+}

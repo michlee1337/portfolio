@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Goole fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CFira+Sans:300,400,400i,600" rel="stylesheet">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="container text-center">
+      <a href="#" id="cta" class="btn btn-outline-dark my-4">Hello</a>
+    </div>
+    <div id="line-1" class="story-line col-md-8 offset-md-2 position-relative">
+      <h1> Hi there! I'm Michelle </h1>
+      <div id="hand" class="position-absolute">
+        <img src="wave-hand.svg">
+      </div>
+    </div>
+    <div class="story-line col-md-8 offset-md-2">
+      <h1> I like building things </h1>
+    </div>
+    <div class="story-line col-md-8 offset-md-2">
+      <h1> I'm looking for learning opportunities so I can build better things.</h1>
+    </div>
+    <div class="story-call col-md-4 text-center">
+      <h2>See where I've been</h2>
+      <a href="#" class="btn btn-outline-dark">MY WORK</a>
+    </div>
+    <div class="story-call col-md-4 offset-md-8 text-center">
+      <h2>And where I'm going</h2>
+      <a href="#" class="btn btn-outline-dark">MY PHILOSOPHY</a>
+    </div>
+    <div class="story-call col-md-4 offset-md-4 text-center">
+      <h2>Or, just grab coffee with me </h2>
+      <a href="#" class="btn btn-outline-dark">CONTACT ME</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('cta').addEventListener('click',function(){
+      TweenMax.to('h1',1.5,{opacity: 1, y: 20, delay: 0.5});
+    })
+  </script>
+
+
+
+</body>
+</html>
