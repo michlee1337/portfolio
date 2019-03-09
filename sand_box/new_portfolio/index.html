@@ -20,7 +20,7 @@
 <body>
   <div class="container-fluid">
     <div class="container text-center">
-      <a href="#" id="cta" class="btn btn-outline-dark my-4">Hello</a>
+      <a href="#" id="cta" class="btn btn-outline-dark my-4 floating">Hello</a>
     </div>
     <div id="line-1" class="story-line col-md-8 offset-md-2 position-relative">
       <h1> Hi there! I'm Michelle </h1>
@@ -51,6 +51,10 @@
   <script>
     document.getElementById('cta').addEventListener('click',function(){
       TweenMax.to('h1',1.5,{opacity: 1, y: 20, delay: 0.5});
+      TweenMax.to('#hand',1.5,{opacity: 1, delay: 1});
+      TweenMax.to('h2',1.5,{opacity: 1, y: 20, delay: 2});
+      TweenMax.to('a',1.5,{opacity: 1, y: 20, delay: 3});
+
     })
   </script>
 
