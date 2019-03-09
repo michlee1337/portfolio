@@ -1,25 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {inject,observer} from 'mobx-react';
 
+@inject('TaskStore')
+@observer
 class App extends Component {
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const task = this.task.value;
+    this.props.TaskStore.addTask(task);
+    this.task.value = '';
+  }
+
   render() {
+    const {TaskStore} = this.props;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h2>You have {TaskStore.taskCount} tasks.</h2>
+
+        <form onSubmit={e => this.handleSubmit(e)}>
+          <input type="text" placeholder="What will you do today?" ref={input => this.task = input}/>
+          <button>Add Task</button>
+        </form>
+        <ul>
+          {TaskStore.tasks.map(task => (
+              <li key={task}>
+                {task}
+              </li>
+            ))}
+        </ul>
       </div>
     );
   }
