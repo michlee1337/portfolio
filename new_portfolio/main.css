@@ -1,69 +1,131 @@
-/* FONTS AND BACKGROUND */
+/* _______ Fonts & Colors _______ */
+
+:root {
+    --main-color:#f1f2ec;
+    --text-color:#20201f;
+    --button: #555555;
+    --secondary-color: #454545;
+    /*
+    --secondary-color: #F0D9F7;
+    --main-color-highlight: #7907FF;
+    */
+}
 
 @font-face {
   font-family: santral;
   src: url(santral-light-webfont.woff);
 }
 
-html, .container-fluid {
-	background-color: #f1f2ec;
+html, body {
+	background-color: var(--main-color);
 }
 
-h1,h2,a {
-	color:#20201f;
+h1, h2, a {
 	font-family: santral,'Roboto', sans-serif;
 	font-weight: 900;
-	opacity: 0;
 }
 
-/* STORY */
-
-.story-line {
-	margin-top: 100vh;
-	margin-bottom: 100vh;
-	width: 100%;
+h1, a {
+  color: var(--text-color);
 }
 
-.story-call{
-	margin-bottom: 20vh;
+h2 {
+  color: var(--secondary-color);
 }
 
-.btn-outline-dark {
-	color: #6c6c6c;
-	border-color: #6c6c6c;
+/* _______ Components _______ */
+.btn-dark {
+  display: inline-block;
+  padding: .375rem .75rem;
+  margin: 0;
+  border-radius: .75rem;
+  background-color: var(--main-color);
+  border: 1px solid var(--button);
+  color: var(--text-color);
+  text-decoration: none;
 }
 
-.btn-outline-dark:hover {
-	background-color: #6c6c6c;
-	border-color: #6c6c6c;
+.btn-dark:hover {
+  background-color: var(--button);
+  color: var(--main-color);
+  text-decoration: none;
 }
 
-#line-1{
-	margin-top: 50vh;
+
+/* _______ Main Page _______ */
+.content-centred {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-/* ICONS */
+
+#hello-btn {
+  width: 100px;
+  height: 60px;
+  /**
+  position: absolute;
+  left: calc(50% - 50px);
+  top: calc(50% - 30px);
+  **/
+}
+
+#hello-btn a {
+  font-size: 30px;
+  text-decoration: None;
+  margin: 0;
+}
+
+#main-content {
+  display: none;
+  position: relative;
+  width: 500px;
+  height: 150px;
+}
+
+#main-text {
+  float: left;
+}
+
 #hand{
-	top: 100%;
-	right: 0;
+  display: none;
 	width: 70px;
-	opacity: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
-/* GSAP */
-#cta {
-	opacity: 1;
+.navigation-block {
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  padding: 20px;
+  display: none;
+}
+
+#work-block {
+  top: 10%;
+  left: 0;
+}
+
+#about-block {
+  top: 20%;
+  right: 0;
+}
+
+#contact-block {
+  bottom: 10%;
+  left: calc(50% - 200px);
 }
 
 
-/* CSS Float */
-
-.floating {  
+/* _______ Animation _______*/
+.floating {
     animation-name: floating;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    margin-left: 30px;
     margin-top: 5px;
     fill: #6c757d;
 }
