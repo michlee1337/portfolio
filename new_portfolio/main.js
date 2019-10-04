@@ -7,8 +7,11 @@ $( document ).ready(function() {
     $( "#work-block" ).delay( 2000 ).fadeIn("slow");
     $( "#about-block" ).delay( 2500 ).fadeIn("slow");
     $( "#contact-block" ).delay( 3000 ).fadeIn("slow");
-    //document.getElementById('line-1').classList.remove("fade");
-    //document.getElementById('cta').classList.add("fade");
-    //document.getElementById('down').classList.remove("fade");
+
+    window.setTimeout(function () {
+      document.querySelectorAll(".navigation-block").forEach(element => {
+        element.classList.add("floating");
+      });
+    }, 3500);
   });
 });
